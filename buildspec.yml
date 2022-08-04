@@ -10,6 +10,8 @@ phases:
     commands:
       - php -v
       - echo ${CODEBUILD_WEBHOOK_TRIGGER#branch/}
+      - php app/composer.phar install
+      - php app/artisan test
   build:
     commands:
       - echo "Hello, World! (phase=build)"
