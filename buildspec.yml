@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       php: 7.4
     commands:
-      - echo "install php 7.4"
+      - echo "install php 7.4!"
   pre_build:
     commands:
       - php -v
