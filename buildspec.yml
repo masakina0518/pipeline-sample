@@ -6,7 +6,7 @@ phases:
       - echo "Hello, Not Work! (phase=install) "
   pre_build:
     commands:
-      - echo "Hello, World! (phase=pre_build)"
+      - echo "Hello, Not Work! (phase=pre_build)"
   build:
     commands:
       - echo "Hello, World! (phase=build)"
