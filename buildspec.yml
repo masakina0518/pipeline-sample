@@ -9,6 +9,7 @@ phases:
   pre_build:
     commands:
       - php -v
+      - echo ${CODEBUILD_WEBHOOK_TRIGGER#branch/}
   build:
     commands:
       - echo "Hello, World! (phase=build)"
